@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday,  Deepi! 🎉</h1>
+    <!-- <h2>hii</h2> -->
+    <div class="photo-slideshow">
+      <img src="./asset/dipankar1.jpeg" alt="Friend Photo 1" class="photo active">
+      <img src="./asset/dipankar2.jpeg" alt="Friend Photo 2" class="photo">
+      <img src="./asset/dipankar3.jpeg" alt="Friend Photo 3" class="photo">
+      <img src="./asset/dipankar4.jpeg" alt="Friend Photo 4" class="photo">
+      <img src="./asset/dipankar5.jpeg" alt="Friend Photo 5" class="photo">
+    </div>
+    <p class="message">Hey Deepankar,</p>
+    <p>Wishing you the happiest birthday ever! You deserve all the love and joy today. Thank you for being an amazing friend. Let's celebrate you today!</p>
+    <div class="animation">
+      🎂 🎈 🎁 🎊
+    </div>
+    <button class="pic_edit"><a href="./photo.html" target="_blank">Click For something🤔</a> </button>
+    <button onclick="celebrate()">Click to Celebrate!</button>
+    <button class="video_edit"><a href="./video.html" target="_blank">Don't Touch ⚠️</a></button>
+    <button class="video_edit"><a href="./music.html" target="_blank">Another But 🙄</a></button>
+  </div>
+
+   
+
+  <script>
+    let currentPhoto = 0;
+    const photos = document.querySelectorAll('.photo');
+
+    function showNextPhoto() {
+      photos[currentPhoto].classList.remove('active');
+      currentPhoto = (currentPhoto + 1) % photos.length;
+      photos[currentPhoto].classList.add('active');
+    }
+
+    setInterval(showNextPhoto, 3000); // Change photo every 3 seconds
+
+    function celebrate() {
+      const animation = document.querySelector('.animation');
+      animation.innerHTML += ' 🎉✨';
+      alert('Wishing you endless happiness!');
+    }
+  </script>
+</body>
+</html>

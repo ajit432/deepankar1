@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="./music.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday, Deepi! 🎉</h1>
+    <div class="photo-container">
+      <img src="./asset/dipankar1.jpeg" alt="Best Friend Photo" class="photo">
+    </div>
+    <p class="message">Hey Deepankar,</p>
+    <p>Today is your special day! May it be as amazing and unique as you are. Here's to another year of friendship, laughter, and memories. You are the best friend anyone could ask for!</p>
+    <div class="animation">
+      🎂 🎈 🎁 🎊
+    </div>
+    <!-- <button onclick="celebrate()">Click to Celebrate!</button> -->
+    <button><audio src="./asset/SaveInsta.to_AQMiFKz3c9MmxXsmp4wSE28qWBnqlvDYKowoiw5VrLYTI5sOQwgL9o7H6ruYfCaZaSF2CFecml3OYRf8y716x2tm.mp4" controls autoplay loop></audio></button>
+  </div>
+
+  <script>
+    function celebrate() {
+      const animation = document.querySelector('.animation');
+      animation.innerHTML += ' 🎉✨';
+      alert('Happy Birthday, Deepi!');
+    }
+  </script>
+</body>
+</html>

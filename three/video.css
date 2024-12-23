@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color:  black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    width: 70%;
+    height: 730px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div{
+    width: 27%;
+    height: 85%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+div>video{
+    height: 100%;
+    width: 100%;
+}
